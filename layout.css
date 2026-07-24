@@ -2,3 +2,31 @@
     width: min(90%, 1200px);
     margin-inline: auto;
 }
+
+#hero {
+    padding: 5rem 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+}
+
+

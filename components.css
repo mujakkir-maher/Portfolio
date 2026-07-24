@@ -1,9 +1,11 @@
+/* Navbar */
 .header {
     position: sticky;
     top: 0;
 
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
+
     z-index: 1000;
 }
 
@@ -13,9 +15,6 @@
     align-items: center;
 
     min-height: 80px;
-    max-width: 1200px;
-    width: 90%;
-    margin-inline: auto;
 }
 
 .logo {
@@ -29,6 +28,7 @@
 .nav-links {
     display: flex;
     gap: 2rem;
+
     list-style: none;
 }
 
@@ -36,8 +36,71 @@
     text-decoration: none;
     color: #6b7280;
     font-weight: 500;
+
+    transition: color .3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus-visible {
     color: #2563eb;
+}
+
+/* hero section */
+
+.hero-greeting {
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.hero-role {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    max-width: 550px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Button component */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem ;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3 ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    border-color: #2563eb;
+}
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: #ffffff;
 }
