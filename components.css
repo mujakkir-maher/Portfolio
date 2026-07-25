@@ -207,3 +207,94 @@ hero-image img {
 .hero-social i {
     font-size: 1.2rem;
 }
+
+/* section header */
+.section-subtitle {
+    color: #2563eb;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #111827;
+}
+
+/* about section */
+.about-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    color: #6b7280;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Quick info card */
+
+.about-details {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 25px 40px rgba(15, 23, 42, 0.08);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.about-details:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(15, 23, 42, .12);
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-item i {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #eff6ff;
+    color: #2558c7;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.info-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.85;
+}
+
+.info-item p {
+    color: #6b7280;
+    line-height: 1.6;
+}
