@@ -59,3 +59,17 @@ body {
     align-items: start;
 }
 
+#skills {
+    padding: 6rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.learning-banner {
+    margin-top: 4rem;
+}
